@@ -1,0 +1,23 @@
+@mixin onMobile-landscape {
+	@media (orientation: landscape) and (max-height: 415px) {
+		@content;
+	}
+}
+
+@mixin onTablet {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin onLaptop {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin onDesktop {
+	@media (min-width: 1260px) {
+		@content;
+	}
+}
